@@ -19,7 +19,7 @@ class SupportVC: UIViewController
 
     @IBOutlet weak var txtName: MDCOutlinedTextField!{
         didSet{
-            txtName.label.text = "Name"
+            txtName.label.text = "이름"
             txtName.label.textColor = UIColor.AppTextField
             txtName.placeHolderColor = UIColor.AppPlaceHolder
             txtName.outlineColor(for: .editing)
@@ -30,7 +30,7 @@ class SupportVC: UIViewController
     }
     @IBOutlet weak var txtEmail: MDCOutlinedTextField!{
         didSet{
-            txtEmail.label.text = "Email"
+            txtEmail.label.text = "이메일"
             txtEmail.label.textColor = UIColor.AppTextField
             txtEmail.placeHolderColor = UIColor.AppPlaceHolder
             txtEmail.outlineColor(for: .editing)
@@ -41,7 +41,7 @@ class SupportVC: UIViewController
     }
     @IBOutlet weak var txtPhoneNumber: MDCOutlinedTextField!{
         didSet{
-            txtPhoneNumber.label.text = "Phone Number"
+            txtPhoneNumber.label.text = "전화번호"
             txtPhoneNumber.label.textColor = UIColor.AppTextField
             txtPhoneNumber.placeHolderColor = UIColor.AppPlaceHolder
             txtPhoneNumber.outlineColor(for: .editing)
@@ -53,7 +53,7 @@ class SupportVC: UIViewController
     @IBOutlet weak var txtDescription: MDCOutlinedTextArea!{
         didSet{
             txtDescription.textView.autocorrectionType = .no
-            txtDescription.label.text = "Description"
+            txtDescription.label.text = "내용"
             txtDescription.label.textColor = UIColor.AppTextField
             txtDescription.placeholderColor = UIColor.AppPlaceHolder
             //txtDescription.textView.placeHolderColor = UIColor.AppPlaceHolder
@@ -70,15 +70,15 @@ class SupportVC: UIViewController
     @IBOutlet weak var BtnSend: EMButton!{
         didSet{
             BtnSend.btnType = .Submit
-            BtnSend.setTitle("Send", for: .normal)
-            BtnSend.setTitle("Send", for: .selected)
+            BtnSend.setTitle("보내기", for: .normal)
+            BtnSend.setTitle("보내기", for: .selected)
         }
     }
     // MARK: - Variables
     @IBOutlet weak var LblNavigationTitle: EMLabel!{
         didSet{
             LblNavigationTitle.fontStyle = .Navigation
-            LblNavigationTitle.text = "Support"
+            LblNavigationTitle.text = "고객문의"
         }
     }
     
@@ -114,7 +114,7 @@ class SupportVC: UIViewController
             return
         }
         guard let Descriptiontext = txtDescription.textView.text, !Descriptiontext.isEmpty else {
-            showAlertWithTitleFromVC(vc: self, andMessage:"Please enter description.")
+            showAlertWithTitleFromVC(vc: self, andMessage:"내용이 필요합니다.")
             return
         }
         self.WSSupport(Parameter: ["email":txtEmail.text!,"name":self.txtName.text!,"country_code":"+82","mobile":self.txtPhoneNumber.text!,"description":self.txtDescription.textView.text!])

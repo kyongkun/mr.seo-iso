@@ -19,7 +19,7 @@ class CoinsVC: UIViewController
     }
     @IBOutlet weak var LblCurruntCoins: UILabel!{
         didSet{
-            LblCurruntCoins.text = "Currunt Coins : " + EstalimUser.shared.coin
+            LblCurruntCoins.text = "잔여 포인트 : " + EstalimUser.shared.coin
         }
     }
 

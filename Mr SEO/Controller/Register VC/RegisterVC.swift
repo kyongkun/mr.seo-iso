@@ -35,19 +35,19 @@ class RegisterVC: UIViewController,UITextFieldDelegate
     @IBOutlet weak var LblNavigation: EMLabel!{
         didSet{
             LblNavigation.fontStyle = .Navigation
-            LblNavigation.text = "Sign Up"
+            LblNavigation.text = "회원가입"
         }
     }
     @IBOutlet weak var BtnSignup: EMButton!{
         didSet{
             BtnSignup.btnType = .Submit
-            BtnSignup.setTitle("Sign Up", for: .normal)
-            BtnSignup.setTitle("Sign Up", for: .selected)
+            BtnSignup.setTitle("회원가입", for: .normal)
+            BtnSignup.setTitle("회원가입", for: .selected)
         }
     }
     @IBOutlet weak var txtEmail: MDCOutlinedTextField!{
         didSet{
-            txtEmail.label.text = "Email"
+            txtEmail.label.text = "이메일"
             txtEmail.label.textColor = UIColor.AppTextField
             txtEmail.placeHolderColor = UIColor.AppPlaceHolder
             txtEmail.outlineColor(for: .editing)
@@ -61,7 +61,7 @@ class RegisterVC: UIViewController,UITextFieldDelegate
     @IBOutlet weak var txtPassword: MDCOutlinedTextField!{
         didSet{
             
-            txtPassword.label.text = "Password"
+            txtPassword.label.text = "비밀번호"
             txtPassword.isSecureTextEntry = true
             txtPassword.label.textColor = UIColor.AppTextField
             txtPassword.placeHolderColor = UIColor.AppPlaceHolder
@@ -76,8 +76,8 @@ class RegisterVC: UIViewController,UITextFieldDelegate
     @IBOutlet weak var txtConfirmPassword: MDCOutlinedTextField!{
         didSet{
             
-            txtConfirmPassword.label.text = "Password"
-            txtConfirmPassword.label.text = "Confirm Password"
+            txtConfirmPassword.label.text = "비밀번호"
+            txtConfirmPassword.label.text = "비밀번호 확인"
             txtConfirmPassword.label.textColor = UIColor.AppTextField
             txtConfirmPassword.placeHolderColor = UIColor.AppPlaceHolder
             txtConfirmPassword.outlineColor(for: .editing)
@@ -91,7 +91,7 @@ class RegisterVC: UIViewController,UITextFieldDelegate
     @IBOutlet weak var txtName: MDCOutlinedTextField!{
         didSet{
             txtName.keyboardType = .default
-            txtName.label.text = "Name"
+            txtName.label.text = "이름"
             txtName.label.textColor = UIColor.AppTextField
             txtName.placeHolderColor = UIColor.AppPlaceHolder
             txtName.outlineColor(for: .editing)
@@ -105,7 +105,7 @@ class RegisterVC: UIViewController,UITextFieldDelegate
     @IBOutlet weak var txtNickName: MDCOutlinedTextField!{
         didSet{
             txtNickName.keyboardType = .default
-            txtNickName.label.text = "Nick Name"
+            txtNickName.label.text = "닉네임"
             txtNickName.label.textColor = UIColor.AppTextField
             txtNickName.placeHolderColor = UIColor.AppPlaceHolder
             txtNickName.outlineColor(for: .editing)
@@ -120,7 +120,7 @@ class RegisterVC: UIViewController,UITextFieldDelegate
         didSet{
             txtNickName.keyboardType = .phonePad
 
-            txtPhone.label.text = "Phone"
+            txtPhone.label.text = "전화번호"
             txtPhone.label.textColor = UIColor.AppTextField
             txtPhone.placeHolderColor = UIColor.AppPlaceHolder
             txtPhone.outlineColor(for: .editing)
@@ -134,7 +134,7 @@ class RegisterVC: UIViewController,UITextFieldDelegate
     
     @IBOutlet weak var txtBankName: MDCOutlinedTextField!{
         didSet{
-            txtBankName.label.text = "Bank Name"
+            txtBankName.label.text = "은행 이름"
             let eyeIcon = UIImageView(image: UIImage(named: "ic_dropdown"))
             txtBankName.trailingView = eyeIcon
             txtBankName.trailingViewMode = .always
@@ -150,7 +150,7 @@ class RegisterVC: UIViewController,UITextFieldDelegate
     }
     @IBOutlet weak var txtAccountNumber: MDCOutlinedTextField!{
         didSet{
-            txtAccountNumber.label.text = "Account Number"
+            txtAccountNumber.label.text = "계좌 번호"
             txtAccountNumber.label.textColor = UIColor.AppTextField
             txtAccountNumber.placeHolderColor = UIColor.AppPlaceHolder
             txtAccountNumber.outlineColor(for: .editing)

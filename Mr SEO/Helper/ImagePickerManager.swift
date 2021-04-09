@@ -13,7 +13,7 @@ import AVFoundation
 class ImagePickerManager: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var picker = UIImagePickerController();
-    var alert = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
+    var alert = UIAlertController(title: "사진 선택", message: nil, preferredStyle: .actionSheet)
     
     //alert.view.tintColor = UIColor.AppRed()
 
@@ -22,15 +22,15 @@ class ImagePickerManager: NSObject, UIImagePickerControllerDelegate, UINavigatio
     
     override init(){
         super.init()
-        let cameraAction = UIAlertAction(title: "Camera", style: .default){
+        let cameraAction = UIAlertAction(title: "카메라", style: .default){
             UIAlertAction in
             self.openCamera()
         }
-        let galleryAction = UIAlertAction(title: "Gallery", style: .default){
+        let galleryAction = UIAlertAction(title: "갤러리", style: .default){
             UIAlertAction in
             self.openGallery()
         }
-        let cancelAction = UIAlertAction(title: "Cancel" , style: .cancel){
+        let cancelAction = UIAlertAction(title: "취소" , style: .cancel){
             UIAlertAction in
         }
         

@@ -43,18 +43,18 @@
                                         <rect key="frame" x="0.0" y="92" width="374" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cI7-wN-L1s" customClass="EMButton" customModule="Mr_SEO" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="138" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="103" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="0.69376070209999996" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Remember me" image="ic_checkbox"/>
+                                                <state key="normal" title="자동 로그인" image="ic_checkbox"/>
                                                 <connections>
                                                     <action selector="BtnRememberMeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tG5-FH-TKn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBc-87-x1p" customClass="EMButton" customModule="Mr_SEO" customModuleProvider="target">
-                                                <rect key="frame" x="259" y="0.0" width="115" height="30"/>
+                                                <rect key="frame" x="292" y="0.0" width="82" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Forgot Password"/>
+                                                <state key="normal" title="비밀번호 찾기"/>
                                                 <connections>
                                                     <action selector="BtnForgotAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ciD-zg-sM2"/>
                                                 </connections>
@@ -66,7 +66,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="fRc-o8-vcd"/>
                                         </constraints>
-                                        <state key="normal" title="Log In"/>
+                                        <state key="normal" title="로그인"/>
                                         <connections>
                                             <action selector="BtnLoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UJM-iN-8Ec"/>
                                         </connections>
@@ -91,30 +91,24 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="kw0-48-JVc">
-                                <rect key="frame" x="109" y="832" width="196.5" height="15.5"/>
+                                <rect key="frame" x="132.5" y="832" width="149.5" height="15.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?   " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRT-1j-18v">
-                                        <rect key="frame" x="0.0" y="0.0" width="149.5" height="15.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정이  없으신가요?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRT-1j-18v">
+                                        <rect key="frame" x="0.0" y="0.0" width="104.5" height="15.5"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="13"/>
                                         <color key="textColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="0.69376070205479456" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Sl-EV-Fqz">
-                                        <rect key="frame" x="149.5" y="0.0" width="47" height="15.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Sl-EV-Fqz">
+                                        <rect key="frame" x="104.5" y="0.0" width="45" height="15.5"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="13"/>
                                         <color key="textColor" name="AppColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr. SEO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJ8-4u-X3R">
-                                <rect key="frame" x="133.5" y="232" width="147.5" height="47"/>
-                                <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="40"/>
-                                <color key="textColor" name="AppColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADH-Lq-ZJw">
-                                <rect key="frame" x="109" y="817" width="196.5" height="45"/>
+                                <rect key="frame" x="132.5" y="817" width="149.5" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="ieR-bF-7G3"/>
                                 </constraints>
@@ -122,24 +116,29 @@
                                     <action selector="BtnRegisterAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W3X-p8-r0Z"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KakaoTalk_20210324_113957535 오전 10.08.24" translatesAutoresizingMaskIntoConstraints="NO" id="YWl-U0-8fz">
+                                <rect key="frame" x="80" y="144" width="254" height="135"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YWl-U0-8fz" secondAttribute="trailing" constant="80" id="1Cj-fl-bd1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Li3-PR-Qtn" secondAttribute="trailing" id="1Hv-8l-oYp"/>
+                            <constraint firstItem="YWl-U0-8fz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="9Fs-Pp-X7l"/>
                             <constraint firstItem="Li3-PR-Qtn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="C8L-E5-3Yw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ADH-Lq-ZJw" secondAttribute="bottom" id="I9G-S0-J9o"/>
-                            <constraint firstItem="Olp-nF-IAS" firstAttribute="top" secondItem="LJ8-4u-X3R" secondAttribute="bottom" constant="75" id="IK7-c6-HQJ"/>
+                            <constraint firstItem="YWl-U0-8fz" firstAttribute="top" secondItem="Li3-PR-Qtn" secondAttribute="bottom" constant="50" id="KEi-Ma-HP0"/>
                             <constraint firstItem="Olp-nF-IAS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="NgL-c9-XHj"/>
                             <constraint firstItem="ADH-Lq-ZJw" firstAttribute="width" secondItem="kw0-48-JVc" secondAttribute="width" id="UDj-vU-hdF"/>
                             <constraint firstItem="ADH-Lq-ZJw" firstAttribute="centerX" secondItem="kw0-48-JVc" secondAttribute="centerX" id="WRA-Sz-OTq"/>
+                            <constraint firstItem="Olp-nF-IAS" firstAttribute="top" secondItem="YWl-U0-8fz" secondAttribute="bottom" constant="75" id="bBK-IR-pE9"/>
                             <constraint firstItem="Olp-nF-IAS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f7N-Mt-A3N"/>
                             <constraint firstItem="Li3-PR-Qtn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fdu-t1-QqH"/>
                             <constraint firstItem="kw0-48-JVc" firstAttribute="centerY" secondItem="ADH-Lq-ZJw" secondAttribute="centerY" id="iNd-qU-3eM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Olp-nF-IAS" secondAttribute="trailing" constant="20" id="jqK-9n-P23"/>
                             <constraint firstItem="kw0-48-JVc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qvm-gj-Qgg"/>
                             <constraint firstItem="Olp-nF-IAS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zGM-Uo-b7U"/>
-                            <constraint firstItem="LJ8-4u-X3R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zGs-ie-Unx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qam-gb-YC1"/>
@@ -189,13 +188,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YcF-2m-3TU">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="63"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5K-kt-hMr">
-                                                <rect key="frame" x="98" y="0.0" width="178.5" height="22"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 잊으셨나요?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5K-kt-hMr">
+                                                <rect key="frame" x="112" y="0.0" width="150" height="22"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="16"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your registered email below to receive password reset instruction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUD-Zp-Ucq">
-                                                <rect key="frame" x="30" y="22" width="314.5" height="41"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입 시 등록된 이메일을 입력해주시면 비밀번호 재설정 메일을 보내드립니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUD-Zp-Ucq">
+                                                <rect key="frame" x="11" y="22" width="352" height="41"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.50824058219178081" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -240,27 +239,48 @@
                                 <rect key="frame" x="172" y="207.5" width="70" height="70"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lnF-8d-Oln">
-                                <rect key="frame" x="162.5" y="817" width="89" height="45"/>
+                                <rect key="frame" x="130.5" y="817" width="153" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Cg8-xp-gDD"/>
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Back to">
+                                        <fragment content="계정이">
                                             <attributes>
                                                 <color key="NSColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <font key="NSFont" size="15" name=".AppleSDGothicNeoI-Regular"/>
+                                                <font key="NSOriginalFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content=" ">
                                             <attributes>
+                                                <color key="NSColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
-                                        <fragment content="Login">
+                                        <fragment content="있으십니까">
+                                            <attributes>
+                                                <color key="NSColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name=".AppleSDGothicNeoI-Regular"/>
+                                                <font key="NSOriginalFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="? ">
+                                            <attributes>
+                                                <color key="NSColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="로그인">
                                             <attributes>
                                                 <color key="NSColor" red="0.30588235294117649" green="0.63921568627450975" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" metaFont="system"/>
+                                                <font key="NSFont" size="13" name=".AppleSDGothicNeoI-Regular"/>
+                                                <font key="NSOriginalFont" metaFont="system"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -356,13 +376,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="MeG-hC-ngg">
                                                 <rect key="frame" x="20" y="62" width="374" height="943.5"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l5W-Tc-L4f" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일 주소" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l5W-Tc-L4f" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" systemColor="tertiaryLabelColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z5R-RO-SrS" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z5R-RO-SrS" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="46" width="374" height="34"/>
+                                                        <color key="textColor" systemColor="tertiaryLabelColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                         <userDefinedRuntimeAttributes>
@@ -371,7 +393,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="loq-CH-tR1" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 확인" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="loq-CH-tR1" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="92" width="374" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -381,18 +403,21 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YJF-Dm-wLM" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YJF-Dm-wLM" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="138" width="374" height="34"/>
+                                                        <color key="textColor" systemColor="tertiaryLabelColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nick Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9s5-uv-xRY" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="닉네임" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9s5-uv-xRY" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="184" width="374" height="34"/>
+                                                        <color key="textColor" name="ButtonColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bvF-aM-Drn" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="핸드폰 번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bvF-aM-Drn" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="230" width="374" height="34"/>
+                                                        <color key="textColor" name="ButtonColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                         <userDefinedRuntimeAttributes>
@@ -401,7 +426,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bank Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Akz-aj-cgx" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="은행 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Akz-aj-cgx" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="276" width="374" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="name"/>
@@ -409,16 +434,17 @@
                                                             <outlet property="delegate" destination="wKL-LP-tnN" id="JHJ-jD-iJJ"/>
                                                         </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Account Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s3i-jn-UVf" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="계좌 번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s3i-jn-UVf" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="322" width="374" height="34"/>
+                                                        <color key="textColor" name="ButtonColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XC7-8i-q6x">
                                                         <rect key="frame" x="0.0" y="368" width="374" height="286"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business registration image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaC-bT-HDo">
-                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="20"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사업자등록증" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaC-bT-HDo">
+                                                                <rect key="frame" x="0.0" y="0.0" width="78" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="BfD-fe-ThP"/>
                                                                 </constraints>
@@ -476,14 +502,14 @@
                                                         <rect key="frame" x="0.0" y="730.5" width="374" height="54"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqY-3m-5PT" customClass="EMButton" customModule="Mr_SEO" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="9.5" width="103" height="35"/>
+                                                                <rect key="frame" x="0.0" y="9.5" width="262" height="35"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="I07-50-R66"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="14"/>
                                                                 <color key="tintColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="0.69376070209999996" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="I agree to the" image="ic_checkbox">
+                                                                <state key="normal" title="개인정보 처리 방침 및 이용약관을 확인했고," image="ic_checkbox">
                                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.50722388698630139" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 </state>
                                                                 <connections>
@@ -491,14 +517,14 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGx-Zi-9Fn" customClass="EMButton" customModule="Mr_SEO" customModuleProvider="target">
-                                                                <rect key="frame" x="107" y="9.5" width="118" height="35"/>
+                                                                <rect key="frame" x="266" y="9.5" width="65" height="35"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="IkZ-X8-4dS"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="14"/>
                                                                 <color key="tintColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="0.69376070209999996" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="terms &amp; conditions">
+                                                                <state key="normal" title="동의합니다.">
                                                                     <color key="titleColor" name="AppColor"/>
                                                                 </state>
                                                                 <connections>
@@ -540,17 +566,41 @@
                                                         <color key="tintColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="0.69376070209999996" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal">
                                                             <attributedString key="attributedTitle">
-                                                                <fragment content="Already have an account? ">
+                                                                <fragment content="계정이">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.51000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="14" name=".AppleSDGothicNeoI-Regular"/>
+                                                                        <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                                <fragment content=" ">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.51000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                         <font key="NSFont" metaFont="system" size="14"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
-                                                                <fragment content="Login">
+                                                                <fragment content="있으십니까">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.51000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="14" name=".AppleSDGothicNeoI-Regular"/>
+                                                                        <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                                <fragment content="? ">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.51000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" metaFont="system" size="14"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                                <fragment content="로그인">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.30588235294117649" green="0.63921568627450975" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" metaFont="system" size="14"/>
+                                                                        <font key="NSFont" size="14" name=".AppleSDGothicNeoI-Regular"/>
+                                                                        <font key="NSOriginalFont" metaFont="system" size="14"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -576,6 +626,9 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dld-Jo-07r">
                                                 <rect key="frame" x="20" y="338" width="374" height="34"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="tertiaryLabelColor"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="BtnIOpenDropDownAction:" destination="wKL-LP-tnN" eventType="touchUpInside" id="Xd1-J3-hnG"/>
                                                 </connections>
@@ -662,13 +715,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DEM-9h-TUi">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="92.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP Verification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIA-O9-py1">
-                                                <rect key="frame" x="124.5" y="0.0" width="125.5" height="22"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP 확인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIA-O9-py1">
+                                                <rect key="frame" x="155.5" y="0.0" width="63.5" height="22"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="16"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter ther OTP sent to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAm-m7-lDi">
-                                                <rect key="frame" x="109" y="22" width="156.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전송된 OTP 번호를 입력하세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAm-m7-lDi">
+                                                <rect key="frame" x="93.5" y="22" width="187.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.50824058220000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -744,27 +797,30 @@
                                 <rect key="frame" x="172" y="185" width="70" height="70"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kam-kq-su8">
-                                <rect key="frame" x="158" y="817" width="98" height="45"/>
+                                <rect key="frame" x="156.5" y="817" width="101" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="E9i-CS-MZy"/>
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Back to">
+                                        <fragment content="회원가입">
                                             <attributes>
-                                                <color key="NSColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <color key="NSColor" red="0.30588235294117649" green="0.63921568627450975" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="13" name=".AppleSDGothicNeoI-Regular"/>
+                                                <font key="NSOriginalFont" metaFont="system"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content=" ">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content="Signup">
-                                            <attributes>
                                                 <color key="NSColor" red="0.30588235294117649" green="0.63921568627450975" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" metaFont="system"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="돌아가기">
+                                            <attributes>
+                                                <color key="NSColor" red="0.72157000000000004" green="0.72157000000000004" blue="0.72157000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="AppleSDGothicNeo-Regular"/>
+                                                <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -851,6 +907,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="KakaoTalk_20210324_113957535 오전 10.08.24" width="4097" height="3954"/>
         <image name="ic_checkbox" width="20" height="20"/>
         <image name="ic_editpic" width="44" height="44"/>
         <image name="ic_forgotbg" width="70" height="70"/>
@@ -858,6 +915,9 @@
         <image name="ic_placeholder" width="1500" height="1500"/>
         <namedColor name="AppColor">
             <color red="0.3059999942779541" green="0.63899999856948853" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonColor">
+            <color red="0.41600000858306885" green="0.41600000858306885" blue="0.41600000858306885" alpha="0.6940000057220459" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DashedColor">
             <color red="0.88599997758865356" green="0.88599997758865356" blue="0.88599997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -867,6 +927,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

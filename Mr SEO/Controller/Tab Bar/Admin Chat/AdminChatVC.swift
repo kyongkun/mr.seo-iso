@@ -51,7 +51,7 @@ class AdminChatVC: UIViewController
 
         self.navigationController?.isNavigationBarHidden = false
         self.tabBarController?.tabBar.isHidden = true
-        self.title = "Admin"
+        self.title = "관리자"
         self.WSChatHistory(Parameter: ["message_type":self.message_type])
         
     }

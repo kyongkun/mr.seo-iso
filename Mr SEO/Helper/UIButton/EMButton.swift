@@ -64,6 +64,7 @@ class EMButton: UIButton {
             self.layer.borderWidth = 1
             self.layer.borderColor = hexStringToUIColor(hex: "838383").cgColor
         case .ChatButton:
+            
             self.backgroundColor = .AppDefaultBlue
             self.titleLabel?.font = NotoSans_Medium14
             self.layer.cornerRadius = 3
@@ -82,6 +83,7 @@ class EMButton: UIButton {
             self.layer.zPosition = -1
             break
         case .Submit:
+            self.titleLabel?.text = "확인"
             self.backgroundColor = .AppDefaultBlue
             self.titleLabel?.font = NotoSans_SemiBold20
             self.layer.cornerRadius = 5

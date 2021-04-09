@@ -39,8 +39,8 @@ class ShopDetailsVC: UIViewController
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
         self.tabBarController?.tabBar.isHidden = true
-        self.BtnSubmit.setTitle("Apply For Help", for: .normal)
-        self.BtnSubmit.setTitle("Apply For Help", for: .selected)
+        self.BtnSubmit.setTitle("요청하기", for: .normal)
+        self.BtnSubmit.setTitle("요청하기", for: .selected)
         self.BtnSubmit.addTarget(self, action: #selector(self.OpenChat(sender:)), for: .touchUpInside)
         self.TblDetails.setDefaultProperties(vc: self)
         self.TblDetails.registerCell(type: ShopDetailsXIB.self)
@@ -101,20 +101,20 @@ class ShopDetailsVC: UIViewController
                     self.ArrDetails.removeAll()
                     
                     if let title = DataDict.value(forKey: "title") as? String{
-                        let obj = KeyValue.init(names: "Title", value: title)
+                        let obj = KeyValue.init(names: "제목", value: title)
                         self.ArrDetails.append(obj)
                     }
                     if let category_name = DataDict.value(forKey: "category_name") as? String{
-                        let obj = KeyValue.init(names: "Category", value: category_name)
+                        let obj = KeyValue.init(names: "종류", value: category_name)
                         self.ArrDetails.append(obj)
                     }
                     if let name = DataDict.value(forKey: "name") as? String{
-                        let obj = KeyValue.init(names: "Name", value: name)
+                        let obj = KeyValue.init(names: "이름", value: name)
                         self.ArrDetails.append(obj)
                     }
                     
                     if let keyword = DataDict.value(forKey: "keyword") as? String{
-                        let obj = KeyValue.init(names: "Keyword", value: keyword.description)
+                        let obj = KeyValue.init(names: "키워드", value: keyword.description)
                         self.ArrDetails.append(obj)
                     }
                     if let URL = DataDict.value(forKey: "url") as? String{
@@ -122,11 +122,11 @@ class ShopDetailsVC: UIViewController
                         self.ArrDetails.append(obj)
                     }
                     if let Adescription = DataDict.value(forKey: "description") as? String{
-                        let obj = KeyValue.init(names: "Description", value: Adescription)
+                        let obj = KeyValue.init(names: "내용", value: Adescription)
                         self.ArrDetails.append(obj)
                     }
                     if let point = DataDict.value(forKey: "point") as? Int{
-                        let obj = KeyValue.init(names: "Point", value: "\(point)")
+                        let obj = KeyValue.init(names: "등록 포인트", value: "\(point)")
                         self.ArrDetails.append(obj)
                     }
                     

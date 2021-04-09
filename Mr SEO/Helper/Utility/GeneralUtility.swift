@@ -1727,57 +1727,57 @@ func timeAgoSinceDate1(_ date:Date, numericDates:Bool = false) -> String {
     let components = calendar.dateComponents(unitFlags, from: earliest,  to: latest)
     
     if (components.year! >= 2) {
-        return "\(components.year!) years ago"
+        return "\(components.year!) 년전"
     } else if (components.year! >= 1){
         if (numericDates){
-            return "1 year ago"
+            return "1 년전"
         } else {
-            return "Last year"
+            return "작년"
         }
     } else if (components.month! >= 2) {
-        return "\(components.month!) months ago"
+        return "\(components.month!) 개월전"
     } else if (components.month! >= 1){
         if (numericDates){
-            return "1 month ago"
+            return "1 개월전"
         } else {
-            return "Last month"
+            return "저번 달"
         }
     } else if (components.weekOfYear! >= 2) {
-        return "\(components.weekOfYear!) weeks ago"
+        return "\(components.weekOfYear!) 주전"
     } else if (components.weekOfYear! >= 1){
         if (numericDates){
-            return "1 week ago"
+            return "1 주전"
         } else {
-            return "Last week"
+            return "저번 주"
         }
     } else if (components.day! >= 2) {
-        return "\(components.day!) days ago"
+        return "\(components.day!) 일전"
     } else if (components.day! >= 1){
         if (numericDates){
-            return "1 day ago"
+            return "1 일전"
         } else {
-            return "Yesterday"
+            return "어제"
         }
     } else if (components.hour! >= 2) {
-        return "\(components.hour!) hours ago"
+        return "\(components.hour!) 시간전"
     } else if (components.hour! >= 1){
         if (numericDates){
-            return "1 hour ago"
+            return "1 시간전"
         } else {
-            return "An hour ago"
+            return "1 시간전"
         }
     } else if (components.minute! >= 2) {
-        return "\(components.minute!) minutes ago"
+        return "\(components.minute!) 분전"
     } else if (components.minute! >= 1){
         if (numericDates){
-            return "1 minute ago"
+            return "1 분전"
         } else {
-            return "A minute ago"
+            return "1 분전"
         }
     } else if (components.second! >= 3) {
-        return "\(components.second!) seconds ago"
+        return "\(components.second!) 초전"
     } else {
-        return "Just now"
+        return "방금"
     }
     
 }

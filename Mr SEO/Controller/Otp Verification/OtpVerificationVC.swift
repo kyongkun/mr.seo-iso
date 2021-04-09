@@ -22,7 +22,7 @@ class OtpVerificationVC: UIViewController
     @IBOutlet weak var LblNavigationTitle: EMLabel!{
         didSet{
             LblNavigationTitle.fontStyle = .Navigation
-            LblNavigationTitle.text  = "OTP Verification"
+            LblNavigationTitle.text  = "OTP 인증"
         }
     }
     @IBOutlet weak var BtnVerify: EMButton!{
@@ -95,7 +95,7 @@ class OtpVerificationVC: UIViewController
         let pin = otpTextFieldView.getPin()
 
         guard !pin.isEmpty else {
-            showAlertWithTitleFromVC(vc: self, andMessage: "Pin entry incomplete")
+            showAlertWithTitleFromVC(vc: self, andMessage: "핀을 입력해 주세요")
             //showAlert(title: "Error", message: "Pin entry incomplete")
             return
         }
@@ -103,7 +103,7 @@ class OtpVerificationVC: UIViewController
             self.VerifyOTP(testVerificationCode: pin, verificationID: self.MyverificationID)
         }
         else{
-            showAlertWithTitleFromVC(vc: self, andMessage: "Pin entry incomplete")
+            showAlertWithTitleFromVC(vc: self, andMessage: "핀을 입력해 주세요")
         }
 
 //
@@ -216,28 +216,28 @@ extension AuthErrorCode {
     var errorMessage: String {
         switch self {
         case .invalidVerificationCode:
-            return "Please enter valid pin"
+            return "정확하지 않는 핀입니다"
         case .invalidPhoneNumber:
-            return "Please user valid phone number."
+            return "정확하지 않은 전화번호입니다."
         case .wrongPassword:
-            return "Please enter valid pin"
+            return "정확하지 않는 비밀번호입니다"
         case .tooManyRequests:
-            return  "The request has been blocked, Retry again after some time."
+            return  "요청이 거절됬습니다. 나중에 다시 시도해 주세요."
         
         case .emailAlreadyInUse:
-            return "The email is already in use with another account"
+            return "이미 등록된 이메일 입니다"
         case .userNotFound:
-            return "Account not found for the specified user. Please check and try again"
+            return "입력한 사용자의 계정을 확인할 수 없습니다. 확인하시고 다시 시도해주세요."
         case .userDisabled:
-            return "Your account has been disabled. Please contact support."
+            return "당신의 계정은 정지됬습니다. 고객센터에 문의해주세요."
         case .invalidEmail, .invalidSender, .invalidRecipientEmail:
-            return "Please enter a valid email"
+            return "정확히지 않은 이메일입니다"
         case .networkError:
-            return "Network error. Please try again."
+            return "네트워크 오류. 다시시도 해주세요."
         case .weakPassword:
-            return "Your password is too weak. The password must be 6 characters long or more."
+            return "비밀번호가 약합니다. 비밀번호는 최소 6 자리여야 합니다."
         default:
-            return "Unknown error occurred"
+            return "정확하지 않는 오류"
         }
     }
 }
@@ -249,7 +249,7 @@ extension UIViewController{
             print(errorCode.errorMessage)
             let alert = UIAlertController(title: Constant.APP_NAME, message: errorCode.errorMessage, preferredStyle: .alert)
 
-            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
 
             alert.addAction(okAction)
 

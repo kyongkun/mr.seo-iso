@@ -890,7 +890,7 @@ public extension UIAlertController {
     ///   - buttonTitles: set button array
     ///   - buttonAction: return button click block
     static func showAlert(withMessage message: String,
-                                 buttonTitles: [String] = ["Okay"],
+                                 buttonTitles: [String] = ["확인"],
                                  buttonAction: ((_ index: Int) -> Void)? = nil) {
         var appName = ""
         if let dict = Bundle.main.infoDictionary, let name = dict[kCFBundleNameKey as String] as? String {
@@ -992,7 +992,7 @@ public extension UIAlertController {
         }
         
         if canCancel {
-            let action = UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) in
+            let action = UIAlertAction(title: "취소", style: .cancel, handler: { (_) in
                 if let handler = completion {
                     handler(buttons.count)
                 }

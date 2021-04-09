@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "3.png",
+      "filename" : "Canvas.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "3@2x.png",
+      "filename" : "Canvas@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "3@3x.png",
+      "filename" : "Canvas@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

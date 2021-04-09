@@ -19,7 +19,7 @@ class LoginVC: UIViewController
     @IBOutlet weak var LblNavigation: EMLabel!{
         didSet{
             LblNavigation.fontStyle = .Navigation
-            LblNavigation.text = "Log In"
+            LblNavigation.text = "로그인"
         }
     }
 
@@ -50,7 +50,7 @@ class LoginVC: UIViewController
     // MARK: - UIControler Delegate Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        txtEmail.label.text = "Email"
+        txtEmail.label.text = "이메일"
         txtEmail.label.textColor = UIColor.AppTextFieldText
         txtEmail.placeHolderColor = UIColor.AppPlaceHolder
         txtEmail.outlineColor(for: .editing)
@@ -60,7 +60,7 @@ class LoginVC: UIViewController
 
         txtEmail.sizeToFit()
         txtPassword.isSecureTextEntry = true
-        txtPassword.label.text = "Password"
+        txtPassword.label.text = "비밀번호"
         txtPassword.label.textColor = UIColor.AppTextFieldText
         txtPassword.placeHolderColor = UIColor.AppPlaceHolder
         txtPassword.outlineColor(for: .editing)

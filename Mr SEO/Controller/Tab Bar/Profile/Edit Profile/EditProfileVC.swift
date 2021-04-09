@@ -22,7 +22,7 @@ class EditProfileVC: UIViewController
 
     @IBOutlet weak var txtEmail: MDCOutlinedTextField!{
         didSet{
-            txtEmail.label.text = "Email"
+            txtEmail.label.text = "이메일"
             txtEmail.label.textColor = UIColor.AppTextField
             txtEmail.placeHolderColor = UIColor.AppPlaceHolder
             txtEmail.outlineColor(for: .editing)
@@ -34,7 +34,7 @@ class EditProfileVC: UIViewController
     
     @IBOutlet weak var txtName: MDCOutlinedTextField!{
         didSet{
-            txtName.label.text = "Name"
+            txtName.label.text = "이름"
             txtName.label.textColor = UIColor.AppTextField
             txtName.placeHolderColor = UIColor.AppPlaceHolder
             txtName.outlineColor(for: .editing)
@@ -45,7 +45,7 @@ class EditProfileVC: UIViewController
     }
     @IBOutlet weak var txtNickName: MDCOutlinedTextField!{
         didSet{
-            txtNickName.label.text = "Nick Name"
+            txtNickName.label.text = "닉네임"
             txtNickName.label.textColor = UIColor.AppTextField
             txtNickName.placeHolderColor = UIColor.AppPlaceHolder
             txtNickName.outlineColor(for: .editing)
@@ -56,7 +56,7 @@ class EditProfileVC: UIViewController
     }
     @IBOutlet weak var txtPhone: MDCOutlinedTextField!{
         didSet{
-            txtPhone.label.text = "Phone"
+            txtPhone.label.text = "전화번호"
             txtPhone.label.textColor = UIColor.AppTextField
             txtPhone.placeHolderColor = UIColor.AppPlaceHolder
             txtPhone.outlineColor(for: .editing)
@@ -68,7 +68,7 @@ class EditProfileVC: UIViewController
     
     @IBOutlet weak var txtBankName: MDCOutlinedTextField!{
         didSet{
-            txtBankName.label.text = "Bank Name"
+            txtBankName.label.text = "은행이름"
             let eyeIcon = UIImageView(image: UIImage(named: "ic_dropdown"))
             txtBankName.trailingView = eyeIcon
             txtBankName.trailingViewMode = .always
@@ -82,7 +82,7 @@ class EditProfileVC: UIViewController
     }
     @IBOutlet weak var txtAccountNumber: MDCOutlinedTextField!{
         didSet{
-            txtAccountNumber.label.text = "Account Number"
+            txtAccountNumber.label.text = "계좌번호"
             txtAccountNumber.label.textColor = UIColor.AppTextField
             txtAccountNumber.placeHolderColor = UIColor.AppPlaceHolder
             txtAccountNumber.outlineColor(for: .editing)
@@ -93,7 +93,7 @@ class EditProfileVC: UIViewController
     }
     @IBOutlet weak var txtBankRegistrationImage: MDCOutlinedTextField!{
         didSet{
-            txtBankRegistrationImage.label.text = "Bank Registration Image"
+            txtBankRegistrationImage.label.text = "사업자 등록증 사본"
             txtBankRegistrationImage.label.textColor = UIColor.AppTextField
             txtBankRegistrationImage.placeHolderColor = UIColor.AppPlaceHolder
             txtBankRegistrationImage.outlineColor(for: .editing)
@@ -107,14 +107,14 @@ class EditProfileVC: UIViewController
     @IBOutlet weak var LblNavigationTitle: EMLabel!{
         didSet{
             LblNavigationTitle.fontStyle = .Navigation
-            LblNavigationTitle.text = "Edit Profile"
+            LblNavigationTitle.text = "프로필 수정"
         }
     }
     @IBOutlet weak var BtnUpdate: EMButton!{
         didSet{
             BtnUpdate.btnType = .Submit
-            BtnUpdate.setTitle("Update", for: .normal)
-            BtnUpdate.setTitle("Update", for: .selected)
+            BtnUpdate.setTitle("수정하기", for: .normal)
+            BtnUpdate.setTitle("수정하기", for: .selected)
         }
     }
 

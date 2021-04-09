@@ -4,16 +4,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="NotoSans-Regular.ttf">
-            <string>NotoSans-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -26,35 +20,35 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_splash" translatesAutoresizingMaskIntoConstraints="NO" id="AN1-HD-6bB">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr. SEO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qp2-dd-XGG">
-                                <rect key="frame" x="105.5" y="416" width="203" height="64.5"/>
-                                <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="55"/>
-                                <color key="textColor" name="AppColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pG5-i7-1st">
+                                <rect key="frame" x="93" y="330" width="228" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pG5-i7-1st" secondAttribute="height" multiplier="219:227" id="Odz-k5-2Nm"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="KakaoTalk_20210324_113957535 오전 10.08.24" backgroundImage="KakaoTalk_20210324_113957535 오전 10.08.24"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="pG5-i7-1st" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.55" id="Hsb-rv-tre"/>
                             <constraint firstAttribute="bottom" secondItem="AN1-HD-6bB" secondAttribute="bottom" id="Xem-hS-0pF"/>
                             <constraint firstItem="AN1-HD-6bB" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="auf-ht-qcl"/>
-                            <constraint firstItem="qp2-dd-XGG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="l2y-y4-rrW"/>
-                            <constraint firstItem="qp2-dd-XGG" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mGR-wd-M9v"/>
+                            <constraint firstItem="pG5-i7-1st" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fBV-DL-3gd"/>
                             <constraint firstItem="AN1-HD-6bB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="omH-JF-1t3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AN1-HD-6bB" secondAttribute="trailing" id="tGy-8U-5PU"/>
+                            <constraint firstItem="pG5-i7-1st" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="wQD-KP-CBN"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
+        <image name="KakaoTalk_20210324_113957535 오전 10.08.24" width="4097" height="3954"/>
         <image name="bg_splash" width="375" height="812"/>
-        <namedColor name="AppColor">
-            <color red="0.3059999942779541" green="0.63899999856948853" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -10,7 +10,7 @@ let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
 
 let INTERNET_MESSAGE:String = "Please check your internet connection and try again."
 func SHOW_INTERNET_ALERT(){
-    showAlertWithTitleFromVC(vc: (appDelegate.window?.rootViewController)!, title:Constant.APP_NAME, andMessage: INTERNET_MESSAGE, buttons: ["Dismiss"]) { (index) in
+    showAlertWithTitleFromVC(vc: (appDelegate.window?.rootViewController)!, title:Constant.APP_NAME, andMessage: INTERNET_MESSAGE, buttons: ["확인"]) { (index) in
     }
 }
 
@@ -173,7 +173,7 @@ func SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(version: String) -> Bool {
 func showAlertWithTitleFromVC(vc:UIViewController, andMessage message:String)
 {
     
-    showAlertWithTitleFromVC(vc: vc, title:Constant.APP_NAME, andMessage: message, buttons: ["Dismiss"]) { (index) in
+    showAlertWithTitleFromVC(vc: vc, title:Constant.APP_NAME, andMessage: message, buttons: ["확인"]) { (index) in
     }
 }
 func showAutoDismissAlert(vc:UIViewController,msg:String,time:Double, completion:((_ index:Int) -> Void)!) -> Void
@@ -261,8 +261,8 @@ struct Constant {
 //----------------------------------------------------------------
 //MARK:- KEY CONST -
 static let kStaticRadioOfCornerRadios:CGFloat = 0
-static let ALERT_OK                = "OK"
-static let ALERT_DISMISS           = "Dismiss"
+static let ALERT_OK                = "확인"
+static let ALERT_DISMISS           = "확인"
 static let KEY_IS_USER_LOGGED_IN   = "USER_LOGGED_IN"
 
 
@@ -272,7 +272,7 @@ static var APP_NAME:String {
     if let bundalDicrectory = Bundle.main.infoDictionary{
         return  bundalDicrectory[kCFBundleNameKey as String] as! String
     } else {
-        return "Mr. SEO"
+        return "Mr. 품앗이"
     }
     
 }

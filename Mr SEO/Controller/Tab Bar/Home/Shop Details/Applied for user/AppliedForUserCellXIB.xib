@@ -22,7 +22,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="45" id="vjo-RI-HSX"/>
                         </constraints>
-                        <state key="normal" title="Apply for Help"/>
+                        <state key="normal" title="요청하기"/>
                     </button>
                 </subviews>
                 <constraints>

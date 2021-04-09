@@ -33,12 +33,14 @@ class CoinsCellXIB: UITableViewCell {
     func setData(Data:CoinDataModel){
         if(Data.type != "Received"){
             self.Lblamount.textColor = .StatusRed
+            self.Lblamount.text = "사용함"
         }
         else{
             self.Lblamount.textColor = .StatusGreen
+            self.Lblamount.text = "받음"
         }
-        self.Lblamount.text = Data.type
-        self.LblInfo.text = Data.amount!.description + " Coins"
+      //  self.Lblamount.text = Data.type
+        self.LblInfo.text = Data.amount!.description + " 포인트"
         self.LblDate.text = Data.created_at
     }
 }

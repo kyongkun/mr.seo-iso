@@ -57,8 +57,8 @@ class HelpDetailsVC: UIViewController {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
         self.tabBarController?.tabBar.isHidden = true
-        self.BtnSubmit.setTitle("Apply For Help", for: .normal)
-        self.BtnSubmit.setTitle("Apply For Help", for: .selected)
+        self.BtnSubmit.setTitle("요청하기", for: .normal)
+        self.BtnSubmit.setTitle("요청하기", for: .selected)
         self.BtnSubmit.addTarget(self, action: #selector(self.OpenChat(sender:)), for: .touchUpInside)
         self.TblDetails.setDefaultProperties(vc: self)
         self.TblDetails.registerCell(type: ShopDetailsXIB.self)
@@ -184,20 +184,20 @@ class HelpDetailsVC: UIViewController {
                         }
                     if let category_name = DataDict.value(forKey: "category_name") as? String{
                         let ListObj = LIstDetailsModel.init(dictionary: [:])
-                        ListObj?.name = "Category"
+                        ListObj?.name = "종류"
                         ListObj?.value = category_name
                         self.ArrDetails.append(ListObj!)
                     }
                     if let name = DataDict.value(forKey: "name") as? String{
                         let ListObj = LIstDetailsModel.init(dictionary: [:])
-                        ListObj?.name = "Name"
+                        ListObj?.name = "이름"
                         ListObj?.value = name
                         self.ArrDetails.append(ListObj!)
                     }
                     
                     if let keyword = DataDict.value(forKey: "keyword") as? String{
                         let ListObj = LIstDetailsModel.init(dictionary: [:])
-                        ListObj?.name = "keyword"
+                        ListObj?.name = "키워드"
                         ListObj?.value = keyword
                         self.ArrDetails.append(ListObj!)
                     }
@@ -212,7 +212,7 @@ class HelpDetailsVC: UIViewController {
                     if let Andescription = DataDict.value(forKey: "description") as? String{
                         
                         let descriptionObj = LIstDetailsModel.init(dictionary: [:])
-                        descriptionObj?.name = "Description"
+                        descriptionObj?.name = "내용"
                         descriptionObj?.value = Andescription
                         self.ArrDetails.append(descriptionObj!)
                         
@@ -220,7 +220,7 @@ class HelpDetailsVC: UIViewController {
                     if let point = DataDict.value(forKey: "point") as? Int{
 
                         let ListObj = LIstDetailsModel.init(dictionary: [:])
-                        ListObj?.name = "Remaining Point"
+                        ListObj?.name = "등록 포인트"
                         ListObj?.value = "\(point)"
                         self.ArrDetails.append(ListObj!)
 
@@ -230,10 +230,18 @@ class HelpDetailsVC: UIViewController {
                             
                         }
                         if let status = DataDict.value(forKey: "status") as? String{
-                            
+                            var status1 = ""
+                            switch status {
+                                case "request completed": status1 = "요청 완료"
+                                case "cash sent": status1 = "송금 완료"
+                                case "check proofs": status1 = "증빙 완료"
+                                case "checking proofs": status1 = "증빙중"
+                                case "finished": status1 = "최종 완료"
+                                default : status1 = status
+                            }
                             let statusObj = LIstDetailsModel.init(dictionary: [:])
-                            statusObj?.name = "status"
-                            statusObj?.value = status
+                            statusObj?.name = "진행 상황"
+                            statusObj?.value = status1
                             statusObj?.IsStatus = true
                             self.ArrDetails.append(statusObj!)
                             
@@ -360,7 +368,16 @@ extension HelpDetailsVC:UITableViewDataSource,UITableViewDelegate{
                 cell.selectionStyle = .none
                 if let sts = self.ArrDetails[indexPath.row].value as? String{
                     let str = sts.replace("_", withString: " ")
-                    cell.LblStatus.text = str.capitalized
+                    
+                    var status1 = ""
+                    switch str {
+                        case "request completed": status1 = "요청 완료"
+                        case "cash sent": status1 = "송금 완료"
+                        case "proofs checked": status1 = "증빙 완료"
+                        case "finished": status1 = "최종 완료"
+                        default : status1 = str
+                    }
+                    cell.LblStatus.text = status1
                 }
                 
                 cell.layoutIfNeeded()

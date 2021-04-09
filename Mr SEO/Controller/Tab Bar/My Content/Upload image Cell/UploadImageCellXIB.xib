@@ -23,7 +23,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="328"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload buy &amp; review i mages" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHV-ZU-yh9">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="증거 사진 첨부" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHV-ZU-yh9">
                         <rect key="frame" x="20" y="12" width="280" height="29"/>
                         <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="15"/>
                         <nil key="textColor"/>
@@ -50,14 +50,14 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="jK3-cb-9Li"/>
                                 </constraints>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="이미지 저장"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBT-MM-jQx" customClass="EMButton" customModule="Mr_SEO" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="65" width="280" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Kb9-OP-mFE"/>
                                 </constraints>
-                                <state key="normal" title="Chat to Owner"/>
+                                <state key="normal" title="채팅하기"/>
                             </button>
                         </subviews>
                     </stackView>

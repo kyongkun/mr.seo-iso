@@ -113,7 +113,7 @@
                                                 <rect key="frame" x="12" y="39.5" width="364" height="34"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zfn-PV-xhj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="194.5" height="34"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKR-lO-zEg">
                                                                 <rect key="frame" x="0.0" y="0.0" width="37.5" height="16.5"/>
@@ -130,16 +130,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ggR-0f-vwP">
-                                                        <rect key="frame" x="148" y="0.0" width="216" height="34"/>
+                                                        <rect key="frame" x="195.5" y="0.0" width="168.5" height="34"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining Points" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxI-yu-ppb">
-                                                                <rect key="frame" x="106" y="0.0" width="110" height="16.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남은 포인트" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxI-yu-ppb">
+                                                                <rect key="frame" x="104" y="0.0" width="64.5" height="16.5"/>
                                                                 <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="14"/>
                                                                 <color key="textColor" name="ButtonColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/20" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emT-i5-XmR">
-                                                                <rect key="frame" x="180" y="17.5" width="36" height="16.5"/>
+                                                                <rect key="frame" x="132.5" y="17.5" width="36" height="16.5"/>
                                                                 <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="14"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -160,7 +160,7 @@
                                                     <constraint firstAttribute="height" constant="35" id="B0q-Mk-cTw"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="Go to Chat"/>
+                                                <state key="normal" title="채팅하기"/>
                                             </button>
                                         </subviews>
                                         <constraints>

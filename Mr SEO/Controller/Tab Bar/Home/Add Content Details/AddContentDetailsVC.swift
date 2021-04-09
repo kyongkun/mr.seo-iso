@@ -24,7 +24,7 @@ class AddContentDetailsVC: UIViewController,UITextFieldDelegate
     // MARK: - UIControlers Outlate
     @IBOutlet weak var txtPlatform: MDCOutlinedTextField!{
         didSet{
-            txtPlatform.label.text = "Platform"
+            txtPlatform.label.text = "오픈마켓"
             txtPlatform.autocorrectionType = .no
             
             let eyeIcon = UIImageView(image: UIImage(named: "ic_dropdown"))
@@ -40,7 +40,7 @@ class AddContentDetailsVC: UIViewController,UITextFieldDelegate
     }
     @IBOutlet weak var TxtOther: MDCOutlinedTextField!{
         didSet{
-            TxtOther.label.text = "Other"
+            TxtOther.label.text = "기타"
             TxtOther.autocorrectionType = .no
             TxtOther.label.textColor = UIColor.AppTextField
             TxtOther.placeHolderColor = UIColor.AppPlaceHolder
@@ -53,7 +53,7 @@ class AddContentDetailsVC: UIViewController,UITextFieldDelegate
     }
     @IBOutlet weak var txtKeyword: MDCOutlinedTextField!{
         didSet{
-            txtKeyword.label.text = "Keyword"
+            txtKeyword.label.text = "키워드"
             txtKeyword.autocorrectionType = .no
             txtKeyword.label.textColor = UIColor.AppTextField
             txtKeyword.placeHolderColor = UIColor.AppPlaceHolder
@@ -66,7 +66,7 @@ class AddContentDetailsVC: UIViewController,UITextFieldDelegate
     @IBOutlet weak var txtShoppingMallName: MDCOutlinedTextField!{
         didSet{
             txtShoppingMallName.autocorrectionType = .no
-            txtShoppingMallName.label.text = "Shopping Mall Name"
+            txtShoppingMallName.label.text = "쇼핑몰 이름"
             txtShoppingMallName.label.textColor = UIColor.AppTextField
             txtShoppingMallName.placeHolderColor = UIColor.AppPlaceHolder
             txtShoppingMallName.outlineColor(for: .editing)
@@ -78,7 +78,7 @@ class AddContentDetailsVC: UIViewController,UITextFieldDelegate
     @IBOutlet weak var txtDescription: MDCOutlinedTextArea!{
         didSet{
             txtDescription.textView.autocorrectionType = .no
-            txtDescription.label.text = "Description"
+            txtDescription.label.text = "내용"
             txtDescription.label.textColor = UIColor.AppTextField
             txtDescription.placeholderColor = UIColor.AppPlaceHolder
             //txtDescription.textView.placeHolderColor = UIColor.AppPlaceHolder
@@ -93,7 +93,7 @@ class AddContentDetailsVC: UIViewController,UITextFieldDelegate
     @IBOutlet weak var txtRegisterPoint: MDCOutlinedTextField!{
         didSet{
             txtRegisterPoint.autocorrectionType = .no
-            txtRegisterPoint.label.text = "Register Point"
+            txtRegisterPoint.label.text = "포인트 등록"
             txtRegisterPoint.label.textColor = UIColor.AppTextField
             txtRegisterPoint.placeHolderColor = UIColor.AppPlaceHolder
             txtRegisterPoint.outlineColor(for: .editing)
@@ -142,12 +142,12 @@ class AddContentDetailsVC: UIViewController,UITextFieldDelegate
         dropDown.direction = .any
         dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
         if(IsEdit == false){
-            self.BtnSubmit.setTitle("Add", for: .normal)
-            self.BtnSubmit.setTitle("Add", for: .selected)
+            self.BtnSubmit.setTitle("추가", for: .normal)
+            self.BtnSubmit.setTitle("추가", for: .selected)
         }
         else{
-            self.BtnSubmit.setTitle("Update", for: .normal)
-            self.BtnSubmit.setTitle("Update", for: .selected)
+            self.BtnSubmit.setTitle("업데이트", for: .normal)
+            self.BtnSubmit.setTitle("업데이트", for: .selected)
         }
         // Do any additional setup after loading the view.
     }
@@ -274,7 +274,7 @@ class AddContentDetailsVC: UIViewController,UITextFieldDelegate
         ServiceManager.shared.callAPIPost(WithType: .CreatePost, isAuth: true, WithParams: Parameter) { (ResponseDict, Success, Status) in
             if Success == true{
                 if let message =  ResponseDict?.value(forKey: "message") as? String{
-                    showAlertWithTitleFromVC(vc: self, title: Constant.APP_NAME, andMessage: message, buttons: ["Go to home"]) { (i) in
+                    showAlertWithTitleFromVC(vc: self, title: Constant.APP_NAME, andMessage: message, buttons: ["홈으로 가기"]) { (i) in
                         self.popToRoot()
                     }
                 }
@@ -292,7 +292,7 @@ class AddContentDetailsVC: UIViewController,UITextFieldDelegate
             if Success == true{
                 if let message  = ResponseDict?.value(forKey: "message") as? String{
                     //   showAlertWithTitleFromVC(vc: self, andMessage: message)
-                    showAlertWithTitleFromVC(vc: self, title: Constant.APP_NAME, andMessage: message, buttons: ["Go Back"]) { (i) in
+                    showAlertWithTitleFromVC(vc: self, title: Constant.APP_NAME, andMessage: message, buttons: ["뒤로가기"]) { (i) in
                         self.popTo()
                     }
                 }

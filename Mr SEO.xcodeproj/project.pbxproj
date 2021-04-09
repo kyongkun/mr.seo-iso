@@ -265,8 +265,6 @@
 		04FFDFA1261497FF00B06230 /* HelpDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpDetailsVC.swift; sourceTree = "<group>"; };
 		078C385CAEEF392844527069 /* Pods-Mr SEO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mr SEO.debug.xcconfig"; path = "Target Support Files/Pods-Mr SEO/Pods-Mr SEO.debug.xcconfig"; sourceTree = "<group>"; };
 		1EB8D72E009118AAB6CB9C18 /* Pods_Mr_SEO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mr_SEO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		60296B3A261FE1CA006DEF34 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		60296B3B261FE1CA006DEF34 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		822F843DFAB3978B32D35343 /* Pods-Mr SEO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mr SEO.release.xcconfig"; path = "Target Support Files/Pods-Mr SEO/Pods-Mr SEO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -950,7 +948,6 @@
 			knownRegions = (
 				en,
 				Base,
-				ko,
 			);
 			mainGroup = 04A88E5725E912D00024FF09;
 			productRefGroup = 04A88E6125E912D00024FF09 /* Products */;
@@ -1153,7 +1150,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				04A88E6A25E912D00024FF09 /* Base */,
-				60296B3B261FE1CA006DEF34 /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1162,7 +1158,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				04A88E6F25E912D20024FF09 /* Base */,
-				60296B3A261FE1CA006DEF34 /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

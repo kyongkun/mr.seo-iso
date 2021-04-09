@@ -48,15 +48,15 @@ class MyContentCellXIB: UITableViewCell {
     func setHelpData(Data:MyPostModel){
         self.LblCategoryName.text = Data.title
         if(Data.category_id == 4){
-            self.LblKey1.text = "Title"
+            self.LblKey1.text = "제목"
             self.LblValue1.text = Data.title
             
         }
         else{
-            self.LblKey1.text = "KeyWord"
+            self.LblKey1.text = "키워드"
             self.LblValue1.text = Data.keyword
         }
-        self.LblKey2.text = "Name"
+        self.LblKey2.text = "이름"
         self.LblValue2.text = Data.name
         self.LblRemeber.alpha = 0
         self.LblCoins1.alpha = 0
@@ -64,20 +64,20 @@ class MyContentCellXIB: UITableViewCell {
     func setData(Data:MyPostModel){
         self.LblCategoryName.text = Data.title
         if(Data.category_id == 4){
-            self.LblKey1.text = "Title"
+            self.LblKey1.text = "제목"
             self.LblValue1.text = Data.cafe_title
             
         }
         else{
-            self.LblKey1.text = "KeyWord"
+            self.LblKey1.text = "키워드"
             self.LblValue1.text = Data.keyword
         }
-        self.LblKey2.text = "Name"
+        self.LblKey2.text = "이름"
         self.LblValue2.text = Data.name
         self.LblRemeber.alpha = 1
         self.LblCoins1.alpha = 1
 
-        self.LblCoins1.text = Data.register_point!.description + "/" + Data.helper_count!.description
+        self.LblCoins1.text = String(Data.register_point!-Data.helper_count!) + "/" + Data.register_point!.description
         
     }
     

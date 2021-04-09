@@ -17,7 +17,7 @@ class ChatVC: UIViewController
     @IBOutlet weak var segmentedControl: TTSegmentedControl!{
         didSet{
             segmentedControl.allowChangeThumbWidth = false
-            segmentedControl.itemTitles = ["User","Admin"]
+            segmentedControl.itemTitles = ["사용자","관리자"]
         }
     }
     @IBOutlet weak var LblNavigationTitle: EMLabel!{

@@ -13,12 +13,12 @@ class ProfileVC: UIViewController
     // MARK: - UIControlers Outlate
     @IBOutlet weak var LblPriceInfo: UILabel!{
         didSet{
-            LblPriceInfo.text = "I have " + EstalimUser.shared.coin  + " Coins for use"
+            LblPriceInfo.text = EstalimUser.shared.coin  + " 포인트를 사용할 수 있습니다"
         }
     }
     @IBOutlet weak var Lblamount: UILabel!{
         didSet{
-            Lblamount.text =  EstalimUser.shared.coin  + " Coins"
+            Lblamount.text =  EstalimUser.shared.coin  + " 포인트"
         }
     }
     @IBOutlet weak var ImgUser: UIImageView!
@@ -52,6 +52,9 @@ class ProfileVC: UIViewController
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setData()
+        LblPriceInfo.text = EstalimUser.shared.coin  + " 포인트를 사용할 수 있습니다"
+        Lblamount.text =  EstalimUser.shared.coin  + " 포인트"
+
         self.navigationController?.isNavigationBarHidden = true
         self.tabBarController?.tabBar.isHidden = false
         

@@ -51,8 +51,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QzE-cR-TFS">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Contents &amp; Helps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGb-IN-apU" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
-                                        <rect key="frame" x="126.5" y="15" width="161" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내 품앗이 &amp; 진행중인 품앗이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGb-IN-apU" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
+                                        <rect key="frame" x="111.5" y="15" width="191" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -146,10 +146,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LbV-bT-8Wk">
-                                                <rect key="frame" x="174" y="15" width="66.5" height="20.5"/>
+                                                <rect key="frame" x="175.5" y="15" width="63.5" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Point" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cc-N0-Tbu" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내 포인트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cc-N0-Tbu" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="20.5"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -183,10 +183,10 @@
                                         <rect key="frame" x="0.0" y="50" width="414" height="100"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="MlM-T6-Ym2">
-                                                <rect key="frame" x="24" y="23.5" width="115.5" height="53"/>
+                                                <rect key="frame" x="24" y="23.5" width="95.5" height="53"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY3-F4-i5p">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="14"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환영합니다" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY3-F4-i5p">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="14"/>
                                                         <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="12"/>
                                                         <color key="textColor" red="0.71372549019999998" green="0.85098039219999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -197,8 +197,8 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currunt Coins :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q8-x6-IEL">
-                                                        <rect key="frame" x="0.0" y="33" width="115.5" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잔여 포인트 :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q8-x6-IEL">
+                                                        <rect key="frame" x="0.0" y="33" width="88" height="20"/>
                                                         <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -351,8 +351,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPE-fl-LQL">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sE-qM-x8h" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
-                                        <rect key="frame" x="178" y="14" width="58" height="22.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="품앗이 정보" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sE-qM-x8h" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
+                                        <rect key="frame" x="163.5" y="14" width="87.5" height="22.5"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="19"/>
                                         <color key="textColor" name="ButtonColor"/>
                                         <nil key="highlightedColor"/>
@@ -449,12 +449,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="T6c-tL-ijW">
                                         <rect key="frame" x="20" y="30" width="334" height="118.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash Sent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4r-kL-GSo">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="송금" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4r-kL-GSo">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="27.5"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="20"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you sent a cash?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fb4-2X-rZX">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="송금하시겠습니까?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fb4-2X-rZX">
                                                 <rect key="frame" x="0.0" y="39.5" width="334" height="22"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -465,14 +465,14 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Az-hw-SSa" customClass="EMButton" customModule="Mr_SEO" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="162" height="45"/>
-                                                        <state key="normal" title="No"/>
+                                                        <state key="normal" title="아니오"/>
                                                         <connections>
                                                             <action selector="BtnNoAction:" destination="Y3Q-CY-iuZ" eventType="touchUpInside" id="n9Z-o2-gh8"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVr-Hd-hUB" customClass="EMButton" customModule="Mr_SEO" customModuleProvider="target">
                                                         <rect key="frame" x="172" y="0.0" width="162" height="45"/>
-                                                        <state key="normal" title="Yes"/>
+                                                        <state key="normal" title="예"/>
                                                         <connections>
                                                             <action selector="BtnYesAction:" destination="Y3Q-CY-iuZ" eventType="touchUpInside" id="5zY-91-doy"/>
                                                         </connections>
@@ -530,12 +530,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="OJf-vd-7ji">
                                         <rect key="frame" x="20" y="30" width="334" height="118.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Proof" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbR-Sq-3ok">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="증빙자료" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbR-Sq-3ok">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="27.5"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="20"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure, you viewed uploaded proof ?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnn-u0-MYT">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="증빙자료를 업로드 하시겠습니까?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnn-u0-MYT">
                                                 <rect key="frame" x="0.0" y="39.5" width="334" height="22"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -546,14 +546,14 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzB-Pz-9tn" customClass="EMButton" customModule="Mr_SEO" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="162" height="45"/>
-                                                        <state key="normal" title="No"/>
+                                                        <state key="normal" title="아니오"/>
                                                         <connections>
                                                             <action selector="BtnNoAction:" destination="MBw-4R-AyK" eventType="touchUpInside" id="wqG-bR-NJs"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0M-He-045" customClass="EMButton" customModule="Mr_SEO" customModuleProvider="target">
                                                         <rect key="frame" x="172" y="0.0" width="162" height="45"/>
-                                                        <state key="normal" title="Yes"/>
+                                                        <state key="normal" title="예"/>
                                                         <connections>
                                                             <action selector="BtnYesAction:" destination="MBw-4R-AyK" eventType="touchUpInside" id="dio-4c-kuY"/>
                                                         </connections>
@@ -611,12 +611,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5T9-Fp-3dI">
                                         <rect key="frame" x="20" y="30" width="334" height="118.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash Sent to finish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEy-Ta-siy">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최종완료" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEy-Ta-siy">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="27.5"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="20"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you sent a finish?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQl-CT-xoz">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="품앗이를 완료하시겠습니까?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQl-CT-xoz">
                                                 <rect key="frame" x="0.0" y="39.5" width="334" height="22"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -627,14 +627,14 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTJ-ON-0u5" customClass="EMButton" customModule="Mr_SEO" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="162" height="45"/>
-                                                        <state key="normal" title="No"/>
+                                                        <state key="normal" title="아니오"/>
                                                         <connections>
                                                             <action selector="BtnNoAction:" destination="VaO-a1-wgv" eventType="touchUpInside" id="0vt-td-fYo"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6I-3a-lhu" customClass="EMButton" customModule="Mr_SEO" customModuleProvider="target">
                                                         <rect key="frame" x="172" y="0.0" width="162" height="45"/>
-                                                        <state key="normal" title="Yes"/>
+                                                        <state key="normal" title="예"/>
                                                         <connections>
                                                             <action selector="BtnYesAction:" destination="VaO-a1-wgv" eventType="touchUpInside" id="15u-5R-11Y"/>
                                                         </connections>
@@ -676,7 +676,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USS-5z-rZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3726" y="181"/>
+            <point key="canvasLocation" x="3724.6376811594205" y="180.80357142857142"/>
         </scene>
         <!--Help DetailsVC-->
         <scene sceneID="oZE-jy-FkI">
@@ -689,8 +689,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAF-Xh-g9g">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgv-IK-Qwj" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
-                                        <rect key="frame" x="187.5" y="14" width="39.5" height="22.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="진행중인 품앗이" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgv-IK-Qwj" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
+                                        <rect key="frame" x="147" y="14" width="120.5" height="22.5"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="19"/>
                                         <color key="textColor" name="ButtonColor"/>
                                         <nil key="highlightedColor"/>

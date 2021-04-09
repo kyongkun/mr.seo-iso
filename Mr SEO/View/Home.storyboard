@@ -30,12 +30,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onx-L8-ny3">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr. SEO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6x-Qp-CmA">
-                                        <rect key="frame" x="18" y="10" width="96" height="30.5"/>
-                                        <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="26"/>
-                                        <color key="textColor" name="AppColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rAY-K7-OVi">
                                         <rect key="frame" x="301.5" y="7.5" width="35" height="35"/>
                                         <constraints>
@@ -92,18 +86,25 @@
                                             <action selector="BtnCheckCoinAction:" destination="Rjp-5S-35D" eventType="touchUpInside" id="5Hd-4N-tRm"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KakaoTalk_20210324_113957535 오전 10.08.24" translatesAutoresizingMaskIntoConstraints="NO" id="wis-lg-Xbv">
+                                        <rect key="frame" x="18" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wis-lg-Xbv" secondAttribute="height" multiplier="1:1" id="z4z-LV-cqT"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="wis-lg-Xbv" firstAttribute="top" secondItem="onx-L8-ny3" secondAttribute="top" id="DYd-6a-2LP"/>
                                     <constraint firstItem="rAY-K7-OVi" firstAttribute="centerY" secondItem="onx-L8-ny3" secondAttribute="centerY" id="DoK-rv-jSi"/>
-                                    <constraint firstItem="v6x-Qp-CmA" firstAttribute="centerY" secondItem="onx-L8-ny3" secondAttribute="centerY" id="Eee-Vh-uHZ"/>
                                     <constraint firstItem="flm-Du-alE" firstAttribute="centerX" secondItem="OOq-Bn-fVx" secondAttribute="centerX" id="KSQ-dy-WCi"/>
                                     <constraint firstAttribute="trailing" secondItem="OOq-Bn-fVx" secondAttribute="trailing" constant="18" id="KTE-sZ-NGm"/>
                                     <constraint firstItem="OOq-Bn-fVx" firstAttribute="centerY" secondItem="onx-L8-ny3" secondAttribute="centerY" id="Per-pJ-NFG"/>
                                     <constraint firstItem="flm-Du-alE" firstAttribute="centerY" secondItem="yF5-Cf-ErH" secondAttribute="centerY" id="YDp-9g-dGS"/>
                                     <constraint firstItem="OOq-Bn-fVx" firstAttribute="leading" secondItem="rAY-K7-OVi" secondAttribute="trailing" constant="12" id="fje-JR-T7w"/>
+                                    <constraint firstAttribute="bottom" secondItem="wis-lg-Xbv" secondAttribute="bottom" id="i6h-n8-Aa9"/>
+                                    <constraint firstItem="wis-lg-Xbv" firstAttribute="leading" secondItem="onx-L8-ny3" secondAttribute="leading" constant="18" id="j6t-SA-N4m"/>
                                     <constraint firstAttribute="height" constant="50" id="obm-w6-lHo"/>
-                                    <constraint firstItem="v6x-Qp-CmA" firstAttribute="leading" secondItem="onx-L8-ny3" secondAttribute="leading" constant="18" id="upO-aT-0Gi"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
@@ -181,8 +182,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vBm-rH-i8E">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pI2-SM-66g" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
-                                        <rect key="frame" x="178" y="14" width="58" height="22.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="품앗이 추가" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pI2-SM-66g" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
+                                        <rect key="frame" x="163.5" y="14" width="87.5" height="22.5"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="19"/>
                                         <color key="textColor" name="ButtonColor"/>
                                         <nil key="highlightedColor"/>
@@ -287,8 +288,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fin-0I-Ixi">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Content Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yt5-cH-dAp" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
-                                        <rect key="frame" x="121.5" y="14" width="171.5" height="22.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="품앗이 정보 추가" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yt5-cH-dAp" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
+                                        <rect key="frame" x="144" y="14" width="126" height="22.5"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="19"/>
                                         <color key="textColor" name="ButtonColor"/>
                                         <nil key="highlightedColor"/>
@@ -324,22 +325,22 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Nlz-C2-zTn">
                                                 <rect key="frame" x="20" y="12" width="374" height="387.5"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Platform" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="imQ-KI-eJB" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="오픈마켓" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="imQ-KI-eJB" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Other" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0KI-T7-e2w" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="기타" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0KI-T7-e2w" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="52.5" width="374" height="40.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m9d-4L-0mW" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="키워드" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m9d-4L-0mW" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="105" width="374" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Shopping Mall Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VqS-91-Cmm" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="쇼핑몰 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VqS-91-Cmm" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="157" width="374" height="40.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -348,7 +349,7 @@
                                                         <rect key="frame" x="0.0" y="209.5" width="374" height="59.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Register Point" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDE-pS-N9x" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="포인트 등록" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDE-pS-N9x" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="281" width="374" height="40.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -492,10 +493,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="9kA-nB-rZO">
-                                        <rect key="frame" x="155" y="15" width="104.5" height="20.5"/>
+                                        <rect key="frame" x="168" y="15" width="78" height="20.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Contents" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAL-HL-sR7" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="104.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="품앗이 추가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAL-HL-sR7" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -614,8 +615,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ocf-6X-RIp">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Content Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRu-7m-xVr" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
-                                        <rect key="frame" x="121.5" y="14" width="171.5" height="22.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="품앗이 정보 추가" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRu-7m-xVr" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
+                                        <rect key="frame" x="144" y="14" width="126" height="22.5"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="19"/>
                                         <color key="textColor" name="ButtonColor"/>
                                         <nil key="highlightedColor"/>
@@ -646,32 +647,32 @@
                                 <rect key="frame" x="0.0" y="94" width="414" height="768"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yn2-64-Aam">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="315"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="198"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="cCa-vx-8uk">
-                                                <rect key="frame" x="20" y="12" width="374" height="291"/>
+                                                <rect key="frame" x="20" y="12" width="374" height="174"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8SM-vR-1uw" customClass="MDCOutlinedTextField">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="42.5"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="블로그 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8SM-vR-1uw" customClass="MDCOutlinedTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Shopping Mall Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBX-vt-dCx" customClass="MDCOutlinedTextField">
-                                                        <rect key="frame" x="0.0" y="54.5" width="374" height="42"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="키워드" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBX-vt-dCx" customClass="MDCOutlinedTextField">
+                                                        <rect key="frame" x="0.0" y="36" width="374" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXT-vO-Ila" customClass="MDCOutlinedTextArea">
-                                                        <rect key="frame" x="0.0" y="108.5" width="374" height="62.5"/>
+                                                        <rect key="frame" x="0.0" y="72" width="374" height="0.0"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Register Point" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="unS-zg-828" customClass="MDCOutlinedTextField">
-                                                        <rect key="frame" x="0.0" y="183" width="374" height="42"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="포인트 등록" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="unS-zg-828" customClass="MDCOutlinedTextField">
+                                                        <rect key="frame" x="0.0" y="84" width="374" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BM-jX-gkZ" customClass="EMButton" customModule="Mr_SEO" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="237" width="374" height="54"/>
+                                                        <rect key="frame" x="0.0" y="120" width="374" height="54"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="54" id="lX3-7w-RMe"/>
                                                         </constraints>
@@ -737,8 +738,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXT-Z4-GB7">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Content Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSK-xd-p77" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
-                                        <rect key="frame" x="121.5" y="14" width="171.5" height="22.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="품앗이 정보 추가" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSK-xd-p77" customClass="EMLabel" customModule="Mr_SEO" customModuleProvider="target">
+                                        <rect key="frame" x="144" y="14" width="126" height="22.5"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="19"/>
                                         <color key="textColor" name="ButtonColor"/>
                                         <nil key="highlightedColor"/>
@@ -774,17 +775,17 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3sH-AP-Pqf">
                                                 <rect key="frame" x="20" y="12" width="374" height="214"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GBc-BX-Igo" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="제목" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GBc-BX-Igo" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cafe Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wzo-au-Cc6" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="카페 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wzo-au-Cc6" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="37" width="374" height="25"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cafe URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPP-kF-NQF" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="카페 URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPP-kF-NQF" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="74" width="374" height="25"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -793,7 +794,7 @@
                                                         <rect key="frame" x="0.0" y="111" width="374" height="0.0"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Register Point" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FN6-or-uMI" customClass="MDCOutlinedTextField">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="포인트 등록" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FN6-or-uMI" customClass="MDCOutlinedTextField">
                                                         <rect key="frame" x="0.0" y="123" width="374" height="25"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -857,6 +858,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="KakaoTalk_20210324_113957535 오전 10.08.24" width="2048.5" height="1977"/>
         <image name="ic_back" width="21.5" height="18"/>
         <image name="ic_coin" width="15" height="13"/>
         <image name="ic_home" width="23" height="24.5"/>

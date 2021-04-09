@@ -37,7 +37,7 @@ class ProductCellXIB: UITableViewCell {
         self.LblHeader.text = Data.title
         self.ViewBg.backgroundColor = hexStringToUIColor(hex: Data.color! )//?? "CECECE"
         self.LblUserName.text = Data.email
-        self.LblCoins1.text = Data.helper_count!.description
+        self.LblCoins1.text = String(Data.register_point! - Data.helper_count!)
         self.LblCoins2.text = " /" + Data.register_point!.description
         if(Data.HasAdvertise == true){
             self.ViewAdvertise.isHidden = false
@@ -53,7 +53,7 @@ class ProductCellXIB: UITableViewCell {
         self.LblHeader.text = Data.title?.capitalized
         self.ViewBg.backgroundColor = hexStringToUIColor(hex: Data.color ?? "CECECE")
         self.LblUserName.text = Data.email
-        self.LblCoins1.text = Data.register_point?.description
+        self.LblCoins1.text = String(Data.register_point! - Data.helper_count!)
         self.LblCoins2.text = Data.helper_count?.description
 
     }

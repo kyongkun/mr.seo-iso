@@ -17,14 +17,14 @@ class ForgotVC: UIViewController
     @IBOutlet weak var LblNavigation: EMLabel!{
         didSet{
             LblNavigation.fontStyle = .Navigation
-            LblNavigation.text = "Forgot"
+            LblNavigation.text = "비밀번호 찾기"
         }
     }
     
     @IBOutlet weak var txtEmail: MDCOutlinedTextField!
     {
         didSet{
-            txtEmail.label.text = "Email"
+            txtEmail.label.text = "이메일"
             txtEmail.label.textColor = UIColor.AppTextField
             txtEmail.placeHolderColor = UIColor.AppPlaceHolder
             txtEmail.outlineColor(for: .editing)

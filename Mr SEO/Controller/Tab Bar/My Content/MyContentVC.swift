@@ -18,7 +18,7 @@ class MyContentVC: UIViewController {
     @IBOutlet weak var segmentedControl: TTSegmentedControl!{
         didSet{
             //segmentedControl.allowChangeThumbWidth = false
-            segmentedControl.itemTitles = ["My Contents","Helps"]
+            segmentedControl.itemTitles = ["내 품앗이","진행중인 품앗이"]
         }
     }
     @IBOutlet weak var LblNavigationTitle: EMLabel!{
@@ -184,8 +184,17 @@ extension MyContentVC:UITableViewDataSource,UITableViewDelegate{
             cell.setHelpData(Data: self.ArrHomeData[indexPath.row])
             if let str = self.ArrHomeData[indexPath.row].status{
                 let newString = str.replacingOccurrences(of: "_", with: " ")
-
-                cell.LblStatus.text = newString.capitalized
+                
+                var status1 = ""
+                switch newString {
+                    case "request completed": status1 = "요청 완료"
+                    case "cash sent": status1 = "송금 완료"
+                    case "checking proofs": status1 = "증빙중"
+                    case "proofs checked": status1 = "증빙 완료"
+                    case "finished": status1 = "최종 완료"
+                    default : status1 = newString
+                }
+                cell.LblStatus.text = status1
             }
             
         }

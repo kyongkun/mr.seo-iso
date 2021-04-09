@@ -490,7 +490,7 @@ class ServiceManager: NSObject{
 
                                 if let errorMessage:String =  dataResponce["message"] as? String{
                                     if let topController = UIApplication.topViewController() {
-                                        showAlertWithTitleFromVC(vc: topController, title: Constant.APP_NAME , andMessage: errorMessage, buttons: ["Dismiss"]) { (i) in
+                                        showAlertWithTitleFromVC(vc: topController, title: Constant.APP_NAME , andMessage: errorMessage, buttons: ["확인"]) { (i) in
                                             
                                             if #available(iOS 13, *) {
                                                 sceneDelegate.makeLoginAsRoot()
@@ -638,7 +638,7 @@ class ServiceManager: NSObject{
 
                                 if let errorMessage:String =  dataResponce["message"] as? String{
                                     if let topController = UIApplication.topViewController() {
-                                        showAlertWithTitleFromVC(vc: topController, title: Constant.APP_NAME , andMessage: errorMessage, buttons: ["Dismiss"]) { (i) in
+                                        showAlertWithTitleFromVC(vc: topController, title: Constant.APP_NAME , andMessage: errorMessage, buttons: ["확인"]) { (i) in
                                             
                                             if #available(iOS 13, *) {
                                                 sceneDelegate.makeLoginAsRoot()
@@ -1055,7 +1055,7 @@ class ServiceManager: NSObject{
 
                                 if let errorMessage:String =  dataResponce["message"] as? String{
                                     if let topController = UIApplication.topViewController() {
-                                        showAlertWithTitleFromVC(vc: topController, title: Constant.APP_NAME , andMessage: errorMessage, buttons: ["Dismiss"]) { (i) in
+                                        showAlertWithTitleFromVC(vc: topController, title: Constant.APP_NAME , andMessage: errorMessage, buttons: ["확인"]) { (i) in
                                             
                                             if #available(iOS 13, *) {
                                                 sceneDelegate.makeLoginAsRoot()
@@ -1344,7 +1344,7 @@ class ServiceManager: NSObject{
 
                                     if let errorMessage:String =  dataResponce["message"] as? String{
                                         if let topController = UIApplication.topViewController() {
-                                            showAlertWithTitleFromVC(vc: topController, title: Constant.APP_NAME , andMessage: errorMessage, buttons: ["Dismiss"]) { (i) in
+                                            showAlertWithTitleFromVC(vc: topController, title: Constant.APP_NAME , andMessage: errorMessage, buttons: ["확인"]) { (i) in
                                                 
                                                 if #available(iOS 13, *) {
                                                     sceneDelegate.makeLoginAsRoot()
@@ -1470,7 +1470,7 @@ class ServiceManager: NSObject{
 
                       if let errorMessage:String =  dataResponce["message"] as? String{
                           if let topController = UIApplication.topViewController() {
-                              showAlertWithTitleFromVC(vc: topController, title: Constant.APP_NAME , andMessage: errorMessage, buttons: ["Dismiss"]) { (i) in
+                              showAlertWithTitleFromVC(vc: topController, title: Constant.APP_NAME , andMessage: errorMessage, buttons: ["확인"]) { (i) in
                                   
                                   if #available(iOS 13, *) {
                                       sceneDelegate.makeLoginAsRoot()

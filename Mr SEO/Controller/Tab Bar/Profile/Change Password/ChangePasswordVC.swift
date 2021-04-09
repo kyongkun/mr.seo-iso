@@ -17,7 +17,7 @@ class ChangePasswordVC: UIViewController
     @IBOutlet weak var txtOldPassword: MDCOutlinedTextField!{
         didSet{
             
-            txtOldPassword.label.text = "Old Password"
+            txtOldPassword.label.text = "이전 비밀번호"
             txtOldPassword.isSecureTextEntry = true
             txtOldPassword.label.textColor = UIColor.AppTextField
             txtOldPassword.placeHolderColor = UIColor.AppPlaceHolder
@@ -30,7 +30,7 @@ class ChangePasswordVC: UIViewController
     @IBOutlet weak var txtNewPassword: MDCOutlinedTextField!{
         didSet{
             
-            txtNewPassword.label.text = "New Password"
+            txtNewPassword.label.text = "새로운 비밀번호"
             txtNewPassword.isSecureTextEntry = true
             txtNewPassword.label.textColor = UIColor.AppTextField
             txtNewPassword.placeHolderColor = UIColor.AppPlaceHolder
@@ -42,7 +42,7 @@ class ChangePasswordVC: UIViewController
     }
     @IBOutlet weak var txtCoinfirmPassword: MDCOutlinedTextField!{
         didSet{
-            txtCoinfirmPassword.label.text = "Confirm Password"
+            txtCoinfirmPassword.label.text = "비밀번호 확인"
             txtCoinfirmPassword.isSecureTextEntry = true
             txtCoinfirmPassword.label.textColor = UIColor.AppTextField
             txtCoinfirmPassword.placeHolderColor = UIColor.AppPlaceHolder
@@ -63,7 +63,7 @@ class ChangePasswordVC: UIViewController
     @IBOutlet weak var LblNavigationTitle: EMLabel!{
         didSet{
             LblNavigationTitle.fontStyle = .Navigation
-            LblNavigationTitle.text = "Edit Password"
+            LblNavigationTitle.text = "비밀번호 바꾸기"
         }
     }
     

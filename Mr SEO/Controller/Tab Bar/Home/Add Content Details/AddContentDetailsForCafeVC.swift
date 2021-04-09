@@ -23,7 +23,7 @@ class AddContentDetailsForCafeVC: UIViewController,UITextFieldDelegate
     @IBOutlet weak var txtTitle: MDCOutlinedTextField!{
         didSet{
             txtTitle.autocorrectionType = .no
-            txtTitle.label.text = "Title"
+            txtTitle.label.text = "제목"
             txtTitle.label.textColor = UIColor.AppTextField
             txtTitle.placeHolderColor = UIColor.AppPlaceHolder
             txtTitle.outlineColor(for: .editing)
@@ -35,7 +35,7 @@ class AddContentDetailsForCafeVC: UIViewController,UITextFieldDelegate
     @IBOutlet weak var txtCafeName: MDCOutlinedTextField!{
         didSet{
             txtCafeName.autocorrectionType = .no
-            txtCafeName.label.text = "Cafe Name"
+            txtCafeName.label.text = "카페 이름"
             txtCafeName.label.textColor = UIColor.AppTextField
             txtCafeName.placeHolderColor = UIColor.AppPlaceHolder
             txtCafeName.outlineColor(for: .editing)
@@ -47,7 +47,7 @@ class AddContentDetailsForCafeVC: UIViewController,UITextFieldDelegate
     @IBOutlet weak var txtCafeUrl: MDCOutlinedTextField!{
         didSet{
             txtCafeUrl.autocorrectionType = .no
-            txtCafeUrl.label.text = "Cafe URL"
+            txtCafeUrl.label.text = "카페 URL"
             txtCafeUrl.label.textColor = UIColor.AppTextField
             txtCafeUrl.placeHolderColor = UIColor.AppPlaceHolder
             txtCafeUrl.outlineColor(for: .editing)
@@ -59,7 +59,7 @@ class AddContentDetailsForCafeVC: UIViewController,UITextFieldDelegate
     @IBOutlet weak var txtDescription: MDCOutlinedTextArea!{
         didSet{
             txtDescription.textView.autocorrectionType = .no
-            txtDescription.label.text = "Description"
+            txtDescription.label.text = "내용"
             txtDescription.label.textColor = UIColor.AppTextField
             txtDescription.placeholderColor = UIColor.AppPlaceHolder
             //txtDescription.textView.placeHolderColor = UIColor.AppPlaceHolder
@@ -74,7 +74,7 @@ class AddContentDetailsForCafeVC: UIViewController,UITextFieldDelegate
     @IBOutlet weak var txtRegisterPoint: MDCOutlinedTextField!{
         didSet{
             txtRegisterPoint.autocorrectionType = .no
-            txtRegisterPoint.label.text = "Register Point"
+            txtRegisterPoint.label.text = "포인트 등록"
             txtRegisterPoint.label.textColor = UIColor.AppTextField
             txtRegisterPoint.placeHolderColor = UIColor.AppPlaceHolder
             txtRegisterPoint.outlineColor(for: .editing)
@@ -113,12 +113,12 @@ var IsEdit = false
         self.navigationController?.isNavigationBarHidden = true
         self.tabBarController?.tabBar.isHidden = true
         if(self.IsEdit  == false){
-            self.BtnSubmit.setTitle("Add", for: .normal)
-            self.BtnSubmit.setTitle("Add", for: .selected)
+            self.BtnSubmit.setTitle("추가", for: .normal)
+            self.BtnSubmit.setTitle("추가", for: .selected)
         }
         else{
-            self.BtnSubmit.setTitle("Update", for: .normal)
-            self.BtnSubmit.setTitle("Update", for: .selected)
+            self.BtnSubmit.setTitle("업데이트", for: .normal)
+            self.BtnSubmit.setTitle("업데이트", for: .selected)
         }
         print(self.dataDict)
         if(self.IsEdit == true){
@@ -203,7 +203,7 @@ var IsEdit = false
         ServiceManager.shared.callAPIPost(WithType: .CreatePost, isAuth: true, WithParams: Parameter) { (ResponseDict, Success, Status) in
             if Success == true{
                 if let message =  ResponseDict?.value(forKey: "message") as? String{
-                    showAlertWithTitleFromVC(vc: self, title: Constant.APP_NAME, andMessage: message, buttons: ["Go to home"]) { (i) in
+                    showAlertWithTitleFromVC(vc: self, title: Constant.APP_NAME, andMessage: message, buttons: ["홈으로 가기"]) { (i) in
                         self.popToRoot()
                     }
                 }

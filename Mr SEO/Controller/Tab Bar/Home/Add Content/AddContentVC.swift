@@ -89,28 +89,28 @@ class AddContentVC: UIViewController
 }
 extension AddContentVC: UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UICollectionViewDataSource {
     @objc func btnCellAction(_ sender:UIButton){
-        if(self.arrCategory[sender.tag].title == "Help Online Shop (Buy)"){
+        if(self.arrCategory[sender.tag].title == "온라인 쇼핑몰 품앗이 (구매)"){
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddContentDetailsVC") as! AddContentDetailsVC
             vc.id = "\(self.arrCategory[sender.tag].id!)"
             
             vc.ObjCategory = self.arrCategory[sender.tag]
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        else if(self.arrCategory[sender.tag].title == "Help Blog"){
+        else if(self.arrCategory[sender.tag].title == "블로그 품앗이"){
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddContentforBlogVC") as! AddContentforBlogVC
             vc.ObjCategory = self.arrCategory[sender.tag]
 
             vc.id = "\(self.arrCategory[sender.tag].id!)"
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        else if(self.arrCategory[sender.tag].title == "Help Cafe"){
+        else if(self.arrCategory[sender.tag].title == "카페 품앗이"){
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddContentDetailsForCafeVC") as! AddContentDetailsForCafeVC
             vc.ObjCategory = self.arrCategory[sender.tag]
 
             vc.id = "\(self.arrCategory[sender.tag].id!)"
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        else if(self.arrCategory[sender.tag].title == "Help Online Shop (Browse)"){
+        else if(self.arrCategory[sender.tag].title == "온라인 쇼핑몰 품앗이 (검색)"){
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddContentDetailsVC") as! AddContentDetailsVC
             vc.ObjCategory = self.arrCategory[sender.tag]
 
