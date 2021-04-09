@@ -1,0 +1,90 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "0M4-sw-xac"; */
+"0M4-sw-xac.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Info"; ObjectID = "1Hc-49-ncQ"; */
+"1Hc-49-ncQ.placeholder" = "Info";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "1dq-6T-8L1"; */
+"1dq-6T-8L1.normalTitle" = "Send";
+
+/* Class = "UILabel"; text = "Sign Up"; ObjectID = "5Sl-EV-Fqz"; */
+"5Sl-EV-Fqz.text" = "Sign Up";
+
+/* Class = "UITextField"; placeholder = "Nick Name"; ObjectID = "9s5-uv-xRY"; */
+"9s5-uv-xRY.placeholder" = "Nick Name";
+
+/* Class = "UITextField"; placeholder = "Bank Name"; ObjectID = "Akz-aj-cgx"; */
+"Akz-aj-cgx.placeholder" = "Bank Name";
+
+/* Class = "UILabel"; text = "Mr. SEO"; ObjectID = "LJ8-4u-X3R"; */
+"LJ8-4u-X3R.text" = "Mr. SEO";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "MkO-RL-hkr"; */
+"MkO-RL-hkr.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "Odw-0G-ITk"; */
+"Odw-0G-ITk.normalTitle" = "Log In";
+
+/* Class = "UIButton"; normalTitle = "terms & conditions"; ObjectID = "RGx-Zi-9Fn"; */
+"RGx-Zi-9Fn.normalTitle" = "terms & conditions";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "Sf6-qP-WsF"; */
+"Sf6-qP-WsF.normalTitle" = "Send";
+
+/* Class = "UILabel"; text = "Business registration image"; ObjectID = "WaC-bT-HDo"; */
+"WaC-bT-HDo.text" = "Business registration image";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "XBX-IA-NoJ"; */
+"XBX-IA-NoJ.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "YJF-Dm-wLM"; */
+"YJF-Dm-wLM.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "Don’t have an account?   "; ObjectID = "aRT-1j-18v"; */
+"aRT-1j-18v.text" = "Don’t have an account?   ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bND-Ea-4uH"; */
+"bND-Ea-4uH.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Phone"; ObjectID = "bvF-aM-Drn"; */
+"bvF-aM-Drn.placeholder" = "Phone";
+
+/* Class = "UIButton"; normalTitle = "Remember me"; ObjectID = "cI7-wN-L1s"; */
+"cI7-wN-L1s.normalTitle" = "Remember me";
+
+/* Class = "UILabel"; text = "Forgot your password?"; ObjectID = "e5K-kt-hMr"; */
+"e5K-kt-hMr.text" = "Forgot your password?";
+
+/* Class = "UILabel"; text = "Enter your registered email below to receive password reset instruction"; ObjectID = "fUD-Zp-Ucq"; */
+"fUD-Zp-Ucq.text" = "Enter your registered email below to receive password reset instruction";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "gmT-Bi-zRk"; */
+"gmT-Bi-zRk.normalTitle" = "Log In";
+
+/* Class = "UIButton"; normalTitle = "I agree to the"; ObjectID = "iqY-3m-5PT"; */
+"iqY-3m-5PT.normalTitle" = "I agree to the";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "l5W-Tc-L4f"; */
+"l5W-Tc-L4f.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password"; ObjectID = "lBc-87-x1p"; */
+"lBc-87-x1p.normalTitle" = "Forgot Password";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "loq-CH-tR1"; */
+"loq-CH-tR1.placeholder" = "Confirm Password";
+
+/* Class = "UILabel"; text = "Enter ther OTP sent to"; ObjectID = "mAm-m7-lDi"; */
+"mAm-m7-lDi.text" = "Enter ther OTP sent to";
+
+/* Class = "UILabel"; text = "OTP Verification"; ObjectID = "mIA-O9-py1"; */
+"mIA-O9-py1.text" = "OTP Verification";
+
+/* Class = "UILabel"; text = "아이디는 실사용중인 네이버 아이디를 입력해주시기 바랍니다. 회원가입 이후관리자승인까지 1~2영업일이 소요될 수 있습니다. 관리자 승인 후 로그인 부탁드립니다."; ObjectID = "ooJ-JU-JNF"; */
+"ooJ-JU-JNF.text" = "아이디는 실사용중인 네이버 아이디를 입력해주시기 바랍니다. 회원가입 이후관리자승인까지 1~2영업일이 소요될 수 있습니다. 관리자 승인 후 로그인 부탁드립니다.";
+
+/* Class = "UITextField"; placeholder = "Account Number"; ObjectID = "s3i-jn-UVf"; */
+"s3i-jn-UVf.placeholder" = "Account Number";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "z5R-RO-SrS"; */
+"z5R-RO-SrS.placeholder" = "Password";

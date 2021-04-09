@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSans-Medium.ttf">
+            <string>NotoSans-Medium</string>
+        </array>
+        <array key="NotoSans-Regular.ttf">
+            <string>NotoSans-Regular</string>
+        </array>
+        <array key="NotoSans-SemiBold.ttf">
+            <string>NotoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CoinsCellXIB" customModule="Mr_SEO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u3r-WL-lJV">
+                        <rect key="frame" x="12" y="3" width="296" height="70"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="S4e-M6-aSi">
+                                <rect key="frame" x="263.5" y="28" width="20.5" height="14"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3e-kR-GL0">
+                                        <rect key="frame" x="0.0" y="0.0" width="20.5" height="14"/>
+                                        <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="12"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="q9I-Oa-4Jl">
+                                <rect key="frame" x="12" y="19.5" width="77" height="31.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOC-hv-bNT">
+                                        <rect key="frame" x="0.0" y="0.0" width="59.5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="15"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01st Feb 2021" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umb-16-IyP">
+                                        <rect key="frame" x="0.0" y="17.5" width="77" height="14"/>
+                                        <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="12"/>
+                                        <color key="textColor" name="ButtonColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q9I-Oa-4Jl" firstAttribute="centerY" secondItem="u3r-WL-lJV" secondAttribute="centerY" id="5Qf-1s-Z4L"/>
+                            <constraint firstItem="S4e-M6-aSi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="q9I-Oa-4Jl" secondAttribute="trailing" constant="12" id="I6X-l9-HXk"/>
+                            <constraint firstItem="S4e-M6-aSi" firstAttribute="centerY" secondItem="u3r-WL-lJV" secondAttribute="centerY" id="QQd-ok-KDa"/>
+                            <constraint firstItem="q9I-Oa-4Jl" firstAttribute="leading" secondItem="u3r-WL-lJV" secondAttribute="leading" constant="12" id="T8z-bI-aja"/>
+                            <constraint firstAttribute="height" constant="70" id="qBc-TR-7Ss"/>
+                            <constraint firstAttribute="trailing" secondItem="S4e-M6-aSi" secondAttribute="trailing" constant="12" id="v1v-lY-rwv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="u3r-WL-lJV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="Aah-xn-xt9"/>
+                    <constraint firstAttribute="trailing" secondItem="u3r-WL-lJV" secondAttribute="trailing" constant="12" id="D9G-Al-eT8"/>
+                    <constraint firstItem="u3r-WL-lJV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="RC6-IP-zdB"/>
+                    <constraint firstAttribute="bottom" secondItem="u3r-WL-lJV" secondAttribute="bottom" constant="12" id="W0N-TU-xJM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="LblDate" destination="Umb-16-IyP" id="47f-jz-izr"/>
+                <outlet property="LblInfo" destination="cOC-hv-bNT" id="cF9-jR-aVr"/>
+                <outlet property="Lblamount" destination="k3e-kR-GL0" id="faK-b7-4AA"/>
+            </connections>
+            <point key="canvasLocation" x="102.89855072463769" y="110.15625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="ButtonColor">
+            <color red="0.41600000858306885" green="0.41600000858306885" blue="0.41600000858306885" alpha="0.6940000057220459" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
